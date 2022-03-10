@@ -1,0 +1,225 @@
+/* EXERCISE 1 */
+
+.ex-1-square{
+  transition: 1s;
+}
+
+.ex-1-square:hover{
+  background-color: red;
+}
+
+/* EXERCISE 2 */
+
+.ex-2-square{
+  transition: 1s;
+}
+
+.ex-2-square:active{
+  width: 100%;
+}
+
+/* EXERCISE 3 */
+
+.ex-3-square{
+  transition: 1s;
+}
+
+.ex-3-square:hover{
+  border-radius: 50%;
+}
+
+/* EXERCISE 4 */
+
+.ex-4-square{
+  transition: 1s;
+}
+
+.ex-4-square:hover{
+  background-color: transparent;
+}
+
+/* EXERCISE 5 */
+
+.ex-5-square{
+  transition: 1s;
+}
+
+.ex-5-square:hover{
+  scale: 2;
+}
+
+.ex-5-square:active{
+  scale: 0.7;
+}
+
+/* EXERCISE 6 */
+
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+/* EXERCISE 7 */
+
+.ex-7-img{
+  transition: 1s;
+}
+
+.ex-7-img:hover{
+  filter: sepia(0.5) grayscale(0.3);
+}
+
+/* EXERCIZE 8 */
+.ex-8-img{
+  transition: 1s;
+}
+
+.ex-8-img:hover{
+  filter: sepia(0.5) saturate(0.6);
+  border-radius: 20px;
+}
+
+/* EXERCIZE 9 */
+.ex-9-img{
+  transition: 1s;
+}
+
+.ex-9-img:hover{
+  filter: sepia(0.5) saturate(0.6);
+  border-radius: 20px;
+  scale: 1.5;
+}
+
+/* EXERCIZE 10 */
+.ex-10-icon{
+  animation: rotation 1s infinite linear;
+}
+
+@keyframes rotation{
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+/* EXERCIZE 11 */
+.ex-11-icon:hover{
+  animation: rotation2 2s infinite linear;
+}
+
+@keyframes rotation2{
+  0%{
+    transform: rotate(0deg);
+  }
+
+  75%{
+    transform: rotate(280deg);
+  }
+
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+/* EXERCIZE 12 */
+
+.ex-12-button:hover .ex-12-top-white{
+  animation: rotate 2s linear;
+}
+.ex-12-button:hover .ex-12-bottom-white{
+  animation: rotateb 2s linear;
+}
+
+@keyframes rotate {
+  0%{
+    top: -10px;
+    left: 10%;
+  }
+  50%{
+    top: -10px;
+    left: 70%;
+  }
+  100%{
+    top: -10px;
+    left: 10%;
+  }
+}
+@keyframes rotateb {
+  0%{
+    bottom: -10px;
+    right: 20%;
+  }
+  50%{
+    bottom: -10px;
+    right: 70%;
+  }
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+/* EXERCIZE 13 */
+
+.ex-13-button:hover .ex-13-top-white{
+  animation: rotate2 2s linear;
+}
+.ex-13-button:hover .ex-13-bottom-white{
+  animation: rotateb2 2s linear;
+}
+
+/* div width:60px height:20px */
+
+@keyframes rotate2 {
+  0%{
+    top: -10px;
+    left: 10%;
+  }
+  20%{
+    top: -10px;
+    left: 90%;
+  }
+  40%{
+    top:90%;
+    left: 90%;
+  }
+  60%{
+    top:90%;
+    left: -20px;
+  }
+  80%{
+    top:-10px;
+    left:-20px;
+  }
+  100%{
+    bottom: -10px;
+    left: 10%;
+  }
+}
+@keyframes rotateb2 {
+  0%{
+    bottom: -10px;
+    right: 20%;
+  }
+  20%{
+    bottom:  -10px;
+    right: 80%;
+  }
+  40%{
+    bottom:90%;
+    right: 80%;
+  }
+  60%{
+    bottom:90%;
+    right: -15px;
+  }
+  80%{
+    bottom:-10px;
+    right:-20px;
+  }
+  100%{
+    bottom: -10px;
+    right: 20%;
+  }
+}
